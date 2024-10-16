@@ -2,6 +2,8 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import Friends from "./Friends";
+import Display from "./DisplayFriends";
 
 function App() {
   function handelBtn() {
@@ -29,6 +31,10 @@ function App() {
 
   return (
     <>
+    <Friends></Friends>
+
+
+
       <h1>React Core Concepts 2</h1>
       <button onClick={handelBtn}>click me</button>
       <button onClick={handelArrow}>click arrow</button>
@@ -58,6 +64,8 @@ function App() {
         <button onClick={increment}>increment</button>
         <button onClick={decrement}>decrement</button>
       </div>
+
+
     </>
   );
 }
