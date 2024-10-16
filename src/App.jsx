@@ -16,6 +16,17 @@ function App() {
     alert(num * 3);
   };
 
+  const [count, setCount] = useState(0);
+  const increment = () => {
+    const newCount = count + 1;
+    setCount(newCount);
+  };
+
+  const decrement = () => {
+    const newCount = count - 1;
+    setCount(newCount);
+  };
+
   return (
     <>
       <h1>React Core Concepts 2</h1>
@@ -35,6 +46,18 @@ function App() {
       >
         do math
       </button>
+
+      <div
+        style={{
+          border: "2px solid blue",
+          marginTop: "1rem",
+          borderRadius: "1em",
+        }}
+      >
+        <h3>Count: {count}</h3>
+        <button onClick={increment}>increment</button>
+        <button onClick={decrement}>decrement</button>
+      </div>
     </>
   );
 }
