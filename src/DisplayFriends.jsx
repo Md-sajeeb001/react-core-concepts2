@@ -1,7 +1,6 @@
 
 
 export default function Display({friend}) {
-  console.log(friend);
   const { name, email, id } = friend;
   return (
     <div style={{border: '2px solid red', padding: '1rem', margin: '1rem', borderRadius: '1rem'}}>
